@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
-Classification CV -> predicted distance matrix -> UPGMA tree vs reference phylogeny
-================================================================================
+Classification CV to predicted distance matrix to UPGMA tree vs reference phylogeny
 
 Standalone pipeline (does not import pairwise_distance_classification_oversampling).
 Logic is aligned with:
