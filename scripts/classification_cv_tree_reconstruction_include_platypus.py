@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Run the same CV -> distance matrix -> UPGMA pipeline as classification_cv_tree_reconstruction.py,
+Run the same CV to distance matrix to UPGMA pipeline as classification_cv_tree_reconstruction.py,
 but **keep Ornithorhynchus anatinus** in the analysis (platypus is excluded in the default script).
 
 Does not modify or overwrite:
