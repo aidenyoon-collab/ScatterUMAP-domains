@@ -377,7 +377,7 @@ def compute_summed_distances_variant(
     
     # Debug: sample specific pair indices to verify transform application
     if debug and len(pairs) > 0:
-        # Use specific pair indices as requested: [0, 1287, 2575, 3863, 5150]
+        # Use following pair indices: [0, 1287, 2575, 3863, 5150]
         requested_indices = [0, 1287, 2575, 3863, 5150]
         sample_indices = [i for i in requested_indices if i < len(pairs)]
         debug_info['sample_deltas'] = []
