@@ -2,7 +2,7 @@
 
 Code and data for our study of how much of the mammalian phylogeny can be recovered from protein-domain content alone, and which domains carry that signal. For each of ~100 mammals we take the number of copies of every Pfam protein domain in its proteome and ask three questions: (1) how well does a distance built from those counts track divergence time; (2) can a classifier trained on pairwise domain differences recover the divergence structure and a clade-level tree; and (3) which domains distinguish the major clades, and what do they do biologically. The short answer is that domain content carries a real but coarse signal - it separates the deep lineages and recovers the broad clades, but not fine branching order - and the informative domains fall into a few interpretable functional groups (diet/metabolism, immunity, reproduction).
 
-The per-species domain counts come from [UMAP of Life](https://umap.mcdb.ucla.edu) `[citation to be confirmed]`; the reference timetree is from [TimeTree](http://www.timetree.org) (Kumar et al. 2017, 2022). The full methods and results are described in the accompanying manuscript (Yoon & Pellegrini, in preparation).
+The per-species domain counts come from [UMAP of Life](https://umap.mcdb.ucla.edu); the reference timetree is from [TimeTree](http://www.timetree.org) (Kumar et al. 2017, 2022). The full methods and results are described in the accompanying manuscript (Yoon & Pellegrini, in preparation).
 
 There is nothing to install as a package and no build step. Each script is a standalone analysis run from the command line with the standard scientific-Python stack (`requirements.txt`); it reads the input files under `data_raw/` and writes figures and tables under `results/`. Set `MPLCONFIGDIR` if you want to avoid matplotlib cache warnings.
 
@@ -90,7 +90,7 @@ The random seed is fixed (`RANDOM_STATE = 42`) so the cross-validation folds, ov
 
 ## Data and code availability
 
-- **Domain counts:** UMAP of Life `[confirm citation / URL]`. `MammalDomainCount.tsv` is included here for convenience; the authoritative source is UMAP of Life.
+- **Domain counts:** UMAP of Life . `MammalDomainCount.tsv` is included here for convenience; the authoritative source is UMAP of Life.
 - **Reference phylogeny:** TimeTree - Kumar S, Stecher G, Suleski M, Hedges SB (2017), *Mol Biol Evol* 34(7):1812-1819; and Kumar S et al. (2022), *Mol Biol Evol* 39(8):msac174.
 - **This repository** is archived at `[Zenodo DOI - to be added on release]`.
 
